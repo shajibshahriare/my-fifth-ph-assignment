@@ -13,8 +13,47 @@
 
 <body>
     <!-- header section start -->
-    <header>
+    <header class="container mx-auto">
         <!-- navbar section -->
+        <div class="navbar bg-base-100 mb-8">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Destination</a></li>
+        <li><a>Search</a></li>
+      </ul>
+    </div>
+    <h3 class="text-4xl text-black font-extrabold font-raleway">S.S Ticket</h3>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>About</a></li>
+      <li><a>Destination</a></li>
+      <li><a>Search</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn bg-[#1dd1001a] text-[#1dd100] ">Bus <img class="border-dashed border-2" src="./images/bus-icon.png" alt=""></a>
+  </div>
+</div>
+
+<!-- banner section -->
+<div class="hero bg-cover lg:min-h-screen" style="background-image: url(./images/banner.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div>
+        <h1 class="mb-8 text-6xl font-extrabold">End-to-End Travel with<br><span>S.S Paribahan</span></h1>
+        <p class="mb-8">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        <button class="btn bg-[#1dd100] rounded-md border-0">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
 
 
 
