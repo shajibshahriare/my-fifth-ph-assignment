@@ -288,20 +288,25 @@
                         <h6 class="text-base text-[#030712] font-medium font-inter">BDT <Span id="total-price" class="text-base text-[#030712] font-medium font-inter">0</Span></h6>
                     </div>
                     <div class="flex">
-                        <input class="w-[80%] p-4 ml-6 mr-8 mt-8 relative rounded-xl" type="text" name="" id="" placeholder="Have any coupon?">
-                        <button class="btn btn-active btn-accent bg-[#1dd100] text-white mt-[36px] px-8 absolute right-[15%]">Apply</button>
+                        <input id="coupon-input" class="w-[80%] p-4 ml-6 mr-8 mt-8 relative rounded-xl" type="text" name="" id="" placeholder="Have any coupon?">
+                        <button id="apply-btn" class="btn btn-active btn-accent bg-[#1dd100] text-white mt-[36px] px-8 absolute right-[15%]">Apply</button>
+                    </div>
+                    <div class="flex justify-between mx-6 mt-8">
+                        <h6 class="text-base text-[#030712] font-medium font-inter">Discount</h6>
+                        <h6 class="text-base text-[#030712] font-medium font-inter">BDT <span id="discount-amount" class="text-base text-[#030712] font-medium font-inter">0</span></h6>
                     </div>
                     <div class="flex justify-between mx-6 mt-8">
                         <h6 class="text-base text-[#030712] font-medium font-inter">Grand Total</h6>
-                        <h6 class="text-base text-[#030712] font-medium font-inter">BDT <Span class="text-base text-[#030712] font-medium font-inter">0</Span></h6>
+                        <h6 class="text-base text-[#030712] font-medium font-inter">BDT <Span id="grand-total" class="text-base text-[#030712] font-medium font-inter">0</Span></h6>
                     </div>
                     <h4 class="mx-6 my-4 text-base text-[#030712] font-medium font-inter">Passenger Name*</h4>
                     <input class="p-4 mx-6 rounded-xl" type="text" name="" id="" placeholder="Enter your name">
                     <h4 class="mx-6 my-4 text-base text-[#030712] font-medium font-inter">Phone Number*</h4>
-                    <input class="p-4 mx-6 rounded-xl" type="number" name="" id="" placeholder="Enter your phone number">
+                    <input id="phone-num" class="p-4 mx-6 rounded-xl" type="number" name="" id="" placeholder="Enter your phone number">
                     <h4 class="mx-6 my-4 text-base text-[#030712] font-medium font-inter">Email ID</h4>
                     <input class="p-4 mx-6 mb-4 rounded-xl" type="email" name="" id="" placeholder="Enter your email id">
-                    <input class="w-[92%] mx-6 p-4 text-[#ffffff] text-xl font-extrabold font-raleway bg-[#1dd100] rounded-xl" type="button" value="Next">
+                    <!-- <input class="w-[92%] mx-6 p-4 text-[#ffffff] text-xl font-extrabold font-raleway bg-[#1dd100] rounded-xl" disabled type="button" value="Next"> -->
+                    <button id="btn-next" class="btn w-[92%] mx-6 text-[#ffffff] text-xl font-extrabold font-raleway bg-[#1dd100] rounded-xl" disabled>Next</button>
 
                     <div class="flex justify-around mt-8">
                         <p class="border-b-2 text-base font-normal font-inter">Terms and Conditions</p>

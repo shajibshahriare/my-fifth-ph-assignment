@@ -22,6 +22,7 @@ for (let i = 0; i < seats.length; i++) {
         newDiv.appendChild(p2)
         newDiv.appendChild(p3)
         ticketContainer.appendChild(newDiv)
+        
 
         const newSeatElement = document.getElementById('seat-amount');
         const currentSeatElement = newSeatElement.innerText;
@@ -39,17 +40,45 @@ for (let i = 0; i < seats.length; i++) {
 
         totalPrice = newTicketAmount * 550 ;
         const price = document.getElementById('total-price').innerText = totalPrice
-
-        
-
-
-        // console.log( totalPrice)
-
-
     })
 
 }
-// function addBackgroundColorByClassName(elementClassName){
-//     const element = document.getElementsByClassName(elementClassName)
-//     element.classList.add('bg-green-500')
-// }
+        const btn = document.getElementById('apply-btn')
+        btn.addEventListener("click", function(){
+           
+        const couponInput = document.getElementById('coupon-input').value ;
+        if (couponInput ==="NEW15" || couponInput === "Couple 20"){
+            if(couponInput=== "NEW15"){
+                const discountElement = document.getElementById('discount-amount')
+                const discountAmount = totalPrice * 0.15;
+                discountElement.innerText = discountAmount.toFixed(2)
+                const grandTotal = document.getElementById('grand-total')
+                grandTotal.innerText = totalPrice - discountAmount.toFixed(2)
+                document.getElementById('coupon-input').value="";
+            }
+            if(couponInput === "Couple 20"){
+                const discountElement = document.getElementById('discount-amount')
+                const discountAmount = totalPrice * 0.2;
+                discountElement.innerText = discountAmount.toFixed(2)
+                const grandTotal = document.getElementById('grand-total')
+                grandTotal.innerText = totalPrice - discountAmount.toFixed(2)
+                document.getElementById('coupon-input').value="";
+            }
+            }else{
+              alert("Invalid coupon")
+            }
+
+        })
+        document.getElementById('phone-num').addEventListener("keyup", function(event){
+            const text = parseInt(event.target.value)
+
+            const enableBtn = document.getElementById('btn-next');
+            if(typeof text === "number"){
+
+                enableBtn.removeAttribute('disabled')
+            }
+
+        })
+        // document.getElementById('btn-next').addEventListener("click",function(){
+
+        // })
