@@ -9,4 +9,7 @@
     font-family: "Inter", sans-serif;
 }
 
-
+#ticket-container div {
+    display: flex;
+    justify-content: space-between;
+}
