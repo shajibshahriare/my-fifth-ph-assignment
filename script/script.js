@@ -6,10 +6,8 @@ for (let i = 0; i < seats.length; i++) {
 
     seat.addEventListener("click", function () {
         const seatNumber = seat.innerText;
-        console.log(seatNumber)
         const clickSeat = seat.classList.add('bg-green-500')
         const ticketContainer = document.getElementById("ticket-container")
-
         const newDiv = document.createElement("div");
         const p1 = document.createElement("p1");
         const p2 = document.createElement("p2");
