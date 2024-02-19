@@ -36,6 +36,10 @@ for (let i = 0; i < seats.length; i++) {
         const currentTicket = parseInt(currentTicketElement);
 
         const newTicketAmount = currentTicket + 1;
+        if(newTicketAmount > 4){
+            alert('You cannot buy more than four')
+
+        }
         newTicketElement.innerText = newTicketAmount;
 
         totalPrice = newTicketAmount * 550 ;
