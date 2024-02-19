@@ -55,6 +55,10 @@ for (let i = 0; i < seats.length; i++) {
                 const grandTotal = document.getElementById('grand-total')
                 grandTotal.innerText = totalPrice - discountAmount.toFixed(2)
                 document.getElementById('coupon-input').value="";
+                const disableInputField = document.getElementById('coupon-input')
+                const disableInputFieldBtn = document.getElementById('apply-btn')
+                disableInputFieldBtn.classList.add('hidden')
+                disableInputField.classList.add('hidden')
             }
             if(couponInput === "Couple 20"){
                 const discountElement = document.getElementById('discount-amount')
@@ -63,6 +67,10 @@ for (let i = 0; i < seats.length; i++) {
                 const grandTotal = document.getElementById('grand-total')
                 grandTotal.innerText = totalPrice - discountAmount.toFixed(2)
                 document.getElementById('coupon-input').value="";
+                const disableInputField = document.getElementById('coupon-input')
+                const disableInputFieldBtn = document.getElementById('apply-btn')
+                disableInputFieldBtn.classList.add('hidden')
+                disableInputField.classList.add('hidden')
             }
             }else{
               alert("Invalid coupon")
@@ -79,6 +87,3 @@ for (let i = 0; i < seats.length; i++) {
             }
 
         })
-        // document.getElementById('btn-next').addEventListener("click",function(){
-
-        // })
